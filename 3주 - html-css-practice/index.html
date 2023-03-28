@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>고양이 이름 생성기</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>고양이 이름 생성기</h1>
+  <div id="intro">
+    <p>안녕하세요! 나는 고양이 이름 생성기를 소개하러 왔어요. 
+      여기서는 고양이의 성별, 색상, 성격을 선택하면 고양이 이름을 만들어드려요. 
+      어때요, 귀여워서 설레지 않나요? 함께 즐겁게 고양이 이름을 찾아보아요!</p>
+  </div>  
+	<form>
+		<label for="gender">성별:</label>
+		<select id="gender" name="gender">
+			<option value="male">수컷</option>
+			<option value="female">암컷</option>
+		</select>
+		<br>
+		<label for="color">색상:</label>
+		<select id="color" name="color">
+			<option value="black">검정색</option>
+			<option value="white">하얀색</option>
+			<option value="gray">회색</option>
+			<option value="brown">갈색</option>
+			<option value="orange">주황색</option>
+			<option value="calico">칼리코</option>
+		</select>
+		<br>
+		<label for="personality">성격:</label>
+		<select id="personality" name="personality">
+			<option value="playful">재미있는</option>
+			<option value="shy">수줍은</option>
+			<option value="curious">호기심 많은</option>
+			<option value="relaxed">편안한</option>
+			<option value="bold">대담한</option>
+			<option value="sweet">다정한</option>
+		</select>
+		<br>
+		<button type="button" onclick="generateName()">이름 생성하기</button>
+	</form>
+	<div id="nameResult"></div>
+	<script src="script.js"></script>
+</body>
+</html>
