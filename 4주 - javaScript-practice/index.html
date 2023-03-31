@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팀 나누기 도우미</title>
+    <!-- CSS 파일 링크 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>팀 나누기 도우미</h1>
+    
+    <!-- 사이트 설명 -->
+
+    <div id="description">
+        <p>이 웹사이트는 사용자가 입력한 이름을 바탕으로 무작위로 팀을 나누어 주는 도우미입니다.</p>
+        <p>이름을 입력하고, 팀 수 또는 팀 인원을 설정한 다음 팀 나누기 버튼을 클릭하면 무작위로 팀이 구성됩니다.</p>
+        <p>결과는 텍스트로 출력되며, 이미지로 저장할 수도 있습니다.</p>
+      </div>
+      
+
+    <!-- 이름 입력 및 목록 -->
+    <div id="name-input">
+        <input type="text" id="name" placeholder="이름 입력">
+        <button id="add-name">이름 추가</button>
+        <button id="remove-name">이름 삭제</button>
+        <button id="reset-names">모두 삭제</button>
+    </div>
+    <ul id="name-list"></ul> 
+  
+  
+    <!-- 옵션 설정 -->
+    <div id="options">
+        <label for="num-teams">팀 수:</label>
+        <input type="number" id="num-teams" min="1">
+        <label for="team-size">팀 인원:</label>
+        <input type="number" id="team-size" min="1">
+    </div>
+
+    <!-- 팀 나누기 -->
+    <div id="team-division">
+        <button id="divide-teams">팀 나누기</button>
+    </div>
+
+    <!-- 결과 출력 -->
+    <div id="results">
+        <h2>결과:</h2>
+        <div id="text-result"></div>
+        <button id="save-image">PNG로 저장</button>
+        <canvas id="image-result" style="display:none;"></canvas>
+    </div>
+
+    <!-- JavaScript 파일 링크 -->
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+      <p>
+        <span>2023.03.31</span> |
+        <span>웹프로그래밍개론</span> |
+        <span>고수창</span> |
+        <span>2019-16798</span> |
+        <span><a href="https://github.com/ZALF0615/web-programming" target="_blank">https://github.com/ZALF0615/web-programming</a></span>
+      </p>
+    </div>
+  </footer>
+  
+
+</html>

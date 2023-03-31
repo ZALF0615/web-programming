@@ -1,0 +1,148 @@
+/* 기본 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  
+  input, button {
+    font-size: 16px;
+  }
+  
+  /* 이름 입력 */
+  #name-input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #name-input input[type="text"] {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  #name-input button {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #name-input button:hover {
+    background-color: #005fa3;
+  }
+  
+  #name-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    margin-top: 20px;
+  margin-bottom: 20px; 
+  }
+  
+  #name-list li {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  #name-list li.selected {
+    background-color: #d0d0d0;
+  }
+  
+  /* 옵션 설정 */
+  #options {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  /* 팀 나누기 */
+  #team-division {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  #divide-teams {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #divide-teams:hover {
+    background-color: #005fa3;
+  }
+  
+  /* 결과 출력 */
+  #results {
+    margin-top: 30px;
+  }
+  
+  #text-result {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  #save-image {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #save-image:hover {
+    background-color: #005fa3;
+  }
+
+#description {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  background-color: #f0f0f0;
+  color: #333333; 
+  padding: 1rem; 
+  border-radius: 0.5rem; 
+}
+
+#description p {
+  font-size: 0.9rem; 
+  line-height: 1.5;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #ffffff; 
+  }
+  
+  .footer-content p {
+    margin: 0.25rem 0;
+    font-size: 0.8rem; 
+    color: #666666; 
+  }
+  
