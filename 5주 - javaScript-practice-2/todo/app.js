@@ -20,7 +20,7 @@ const app = {
     titleText.classList.add("title"); // CSS 클래스 추가
 
     const toggleBtn = document.createElement("button"); // 완료 여부를 토글하는 버튼 엘리먼트 생성
-    toggleBtn.textContent = "✔️"; // 텍스트 설정
+    toggleBtn.textContent = "✅"; // 텍스트 설정
     toggleBtn.addEventListener("click", () => {
       // 클릭 이벤트 핸들러 등록
       todoList.toggleComplete(item); // 항목의 완료 여부를 토글
@@ -28,7 +28,7 @@ const app = {
     });
 
     const removeBtn = document.createElement("button"); // 항목을 삭제하는 버튼 엘리먼트 생성
-    removeBtn.textContent = "🗑️"; // 텍스트 설정
+    removeBtn.textContent = "❌"; // 텍스트 설정
     removeBtn.addEventListener("click", () => {
       // 클릭 이벤트 핸들러 등록
       todoList.remove(item); // 항목 삭제
@@ -36,14 +36,14 @@ const app = {
     });
 
     const indexUpBtn = document.createElement("button");
-    indexUpBtn.textContent = "▲";
+    indexUpBtn.textContent = "🔼";
     indexUpBtn.addEventListener("click", () => {
         todoList.switch(item, 0);
         this.renderList();
     });
 
     const indexDownBtn = document.createElement("button");
-    indexDownBtn.textContent = "▼";
+    indexDownBtn.textContent = "🔽";
     indexDownBtn.addEventListener("click", () => {
         todoList.switch(item, 1);
         this.renderList();
